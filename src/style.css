@@ -9,9 +9,12 @@
 }
 html {
   font-family: Nunito, Arial, Helvetica, sans-serif;
-  color: var(--main-color)
+  color: var(--main-color);
 }
 
+body {
+  overflow-x: hidden;
+}
 .portrait {
   width: 80vw;
   object-fit: cover;
@@ -25,7 +28,7 @@ h1 {
 }
 .backGround {
   position: absolute;
-  width: 200vw;
+  width: 200%;
   height: 55vh;
   background-color: var(--main-color);
   z-index: -1;
@@ -33,6 +36,7 @@ h1 {
   top: -10vh;
   transform: rotate(30deg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .icon {
