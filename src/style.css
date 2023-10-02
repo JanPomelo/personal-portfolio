@@ -3,14 +3,19 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
+:root {
+ --main-color: #001f3f;
+ --second-color: white;
+}
 html {
   font-family: Nunito, Arial, Helvetica, sans-serif;
+  color: var(--main-color)
 }
 
 .portrait {
   width: 80vw;
   object-fit: cover;
-  border: #001f3f 3px solid;
+  border: var(--main-color) 3px solid;
   border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -18,12 +23,11 @@ html {
 h1 {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
-
 .backGround {
   position: absolute;
   width: 200vw;
   height: 55vh;
-  background-color: #001f3f;
+  background-color: var(--main-color);
   z-index: -1;
   left: -20vw;
   top: -10vh;
@@ -31,6 +35,8 @@ h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-section {
-  width: 95vw;
+
+
+.icon {
+  width: 32px;
 }
