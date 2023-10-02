@@ -33,7 +33,7 @@ h1 {
   background-color: var(--main-color);
   z-index: -1;
   left: -20vw;
-  top: -10vh;
+  top: -20vh;
   transform: rotate(30deg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -46,4 +46,28 @@ h1 {
 hr {
   border: 2px var(--main-color) solid;
   opacity: 0.8;
+}
+
+@media screen and (min-width: 600px) {
+  .portrait {
+    width: 50vw;
+  }
+  .imageh1Wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imageh1Wrapper {
+    width: max(400px, 40vw);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .portrait {
+    max-width: 400px;
+  }
 }
