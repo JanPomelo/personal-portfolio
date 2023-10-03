@@ -46,7 +46,7 @@ h1 {
 }
 
 .work {
-  grid-gap: 10px;
+  grid-gap: 1em;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
