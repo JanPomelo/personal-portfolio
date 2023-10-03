@@ -1,11 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
 :root {
- --main-color: #001f3f;
- --second-color: white;
+  --main-color: #001f3f;
+  --second-color: white;
 }
 html {
   font-family: Nunito, Arial, Helvetica, sans-serif;
@@ -27,11 +27,11 @@ body {
   object-fit: cover;
   border: var(--main-color) 3px solid;
   border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 .backGround {
   position: absolute;
@@ -43,6 +43,27 @@ h1 {
   transform: rotate(30deg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+}
+
+.work {
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.work > div {
+  border-color: var(--main-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: var(--second-color);
+  background-color: #001f3f;
+}
+
+.projectScreenshot {
+  align-self: center;
+}
+
+.projectLink {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(252deg) brightness(105%) contrast(101%);
+  width: 1.6rem;
 }
 
 main {
