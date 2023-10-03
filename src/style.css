@@ -21,7 +21,8 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: var(--main-color);
+  background-position: center;
+  background-size: cover;
 }
 .portrait {
   width: 80vw;
@@ -83,6 +84,13 @@ hr {
   opacity: 0.8;
 }
 
+@media screen and (min-width:401px) {
+  .footerPortrait {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .portrait {
     width: 50vw;
@@ -96,6 +104,10 @@ hr {
   }
   .backGround {
     transform: rotate(22deg);
+  }
+ 
+  footer:first-child {
+    width: 40vw;
   }
 }
 
@@ -128,4 +140,9 @@ hr {
 footer {
   background-color: var(--main-color);
   color: var(--second-color)
+}
+
+.footerPortrait {
+  max-width: 400px;
+  align-self: center;
 }
