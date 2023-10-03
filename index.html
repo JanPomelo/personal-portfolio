@@ -8,50 +8,84 @@
   </head>
   <body class="w-screen h-screen flex justify-center">
     <div class="flex flex-col wrapper justify-between overflow-x-hidden relative">
-    <div class="backGround"></div>
-    <main class="flex flex-col p-2">
-       <section class="aboutMe flex flex-col p-4 gap-2 lg:flex-row-reverse">
-        <div class="imageh1Wrapper flex flex-col">
-        <img src="portrait_2.png" alt="Jan Steikowski" class="portrait mb-2 self-center" />
-        <h1 class="font-bold text-xl sm:text-4xl bg-dark-blue text-white p-1 px-4 rounded-xl inline-block w-fit">JAN STEIKOWSKI</h1>
-        </div>
-        <div class="aboutMeWrapper bg-white rounded-xl lg:pt-4">
-        <h2 class="font-bold text-xl px-4 mb-2 md: text-2xl lg:text-3xl">About me</h2>
-        <p class="text-justify px-4 md:text-lg lg:text-xl">
-          Greetings! I'm a 28-year-old web developer from Germany. I started my journey into the world of technology and
-          engineering with an apprenticeship as a car mechanic. Eager to explore the intersection of engineering and
-          innovation, I pursued a Bachelors degree in Motorsport Engineering and proudly graduated as one of the top
-          students at my university (1.4 GPA in the german system). My career then led me into the automotive industry,
-          where I delved into the fascinating world of simulation models for Hardware-in-the-Loop Systems. While I
-          thrived in this dynamic environment, my passion for creativity and problem-solving beckoned me towards a new
-          horizon. Recently, I embarked on an exciting adventure—relocating to Bangkok, Thailand. Here, I made a bold
-          decision to leave behind my role in the automotive world to pursue a career in Web Development. I'm driven by
-          the boundless possibilities of programming and the opportunity to craft digital experiences that leave a
-          lasting impact. Web Development has become my canvas, allowing me to blend my technical expertise with my
-          creativity. I'm on a journey to master the art of web development, and I couldn't be more thrilled about the
-          path ahead. Join me as I explore the ever-evolving world of technology and design, one code snippet at a time.
-        </p>
-        <div class="flex gap-4 justify-center items-center mt-4 mb-2">
-          <a href="https://github.com/janpomelo">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt='GitHub'
-          class="icon"/>
-          </a>
-          <a href="https://www.linkedin.com/in/jan-steikowski-644176224/">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-          alt="LinkedIn" class="icon"/>
-          </a>
-        </div>
-         </div>
-      </section>
-      <hr class="mx-4 mb-4"/>
-      <section>
-        <h2>My Work</h2>
-      </section>
-    </main>
-    <footer>
-      <h2>Contact me</h2>
-      <p></p>
-    </footer>
+      <div class="backGround"></div>
+      <main class="flex flex-col p-2">
+        <section class="aboutMe flex flex-col p-4 gap-2 lg:flex-row-reverse">
+          <div class="imageh1Wrapper flex flex-col">
+            <img src="portrait_2.jpg" alt="Jan Steikowski" class="portrait mb-2 self-center" />
+            <h1 class="font-bold text-xl sm:text-4xl bg-dark-blue text-white p-1 px-4 rounded-xl inline-block w-fit">
+              JAN STEIKOWSKI
+            </h1>
+          </div>
+          <div class="aboutMeWrapper bg-white rounded-xl lg:pt-4">
+            <h2 class="font-bold text-xl px-4 mb-2 md: text-2xl lg:text-3xl">About me</h2>
+            <p class="text-justify px-4 md:text-lg lg:text-xl">
+              Greetings! I'm a 28-year-old web developer from Germany. I started my journey into the world of technology
+              and engineering with an apprenticeship as a car mechanic. Eager to explore the intersection of engineering
+              and innovation, I pursued a Bachelors degree in Motorsport Engineering and proudly graduated as one of the
+              top students at my university (1.4 GPA in the german system). My career then led me into the automotive
+              industry, where I delved into the fascinating world of simulation models for Hardware-in-the-Loop Systems.
+              While I thrived in this dynamic environment, my passion for creativity and problem-solving beckoned me
+              towards a new horizon. Recently, I embarked on an exciting adventure - relocating to Bangkok, Thailand.
+              Here, I made a bold decision to leave behind my role in the automotive world to pursue a career in Web
+              Development. I'm driven by the boundless possibilities of programming and the opportunity to craft digital
+              experiences that leave a lasting impact. Web Development has become my canvas, allowing me to blend my
+              technical expertise with my creativity. I'm on a journey to master the art of web development, and I
+              couldn't be more thrilled about the path ahead. Join me as I explore the ever-evolving world of technology
+              and design, one code snippet at a time.
+            </p>
+            <div class="flex gap-4 justify-center items-center mt-4 mb-2">
+              <a href="https://github.com/janpomelo">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                  class="icon"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/jan-steikowski-644176224/">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                  alt="LinkedIn"
+                  class="icon"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <hr class="mx-4 mb-4" />
+        <section class="flex flex-col p-4 gap-2">
+          <h2 class="font-bold text-xl px-4 mb-2 md: text-2xl lg:text-3xl">My Work</h2>
+          <div class="grid work">
+            <div class="flex flex-col rounded-lg">
+              <img src="battleship.png" alt="Battleship Website" class="projectScreenshot rounded-t-lg mb-2" />
+              <div class="flex justify-between items-center m-2">
+                <h3 class="text-lg font-bold">Battleship</h3>
+                <div class="flex gap-4">
+                  <a href="https://www.github.com/janpomelo/battleships">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github Repository" class="projectLink"/>
+                  </a>
+                  <a href="https://janpomelo.github.io/battleships" target="_blank">
+                  <img src="open-in-new.svg" alt="Live Demo" class="projectLink"/>
+                  </a>
+                </div>
+              </div>
+              <p class="mx-2 mb-2">
+                A fully responsive website that lets you challenge an intelligent computer opponent in a game of
+                Battleship. Test your strategic prowess as you plot your moves while the PC deploys a cunning algorithm
+                to outmaneuver you.
+              </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <h2>Contact me</h2>
+        <p></p>
+      </footer>
     </div>
   </body>
 </html>
