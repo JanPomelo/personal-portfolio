@@ -6,6 +6,12 @@
 :root {
   --main-color: #001f3f;
   --second-color: white;
+  --red: #FF4136;
+  --orange: #FF851B;
+  --yellow: #FFDC00;
+  --green: #2ECC40;
+  --blue: #0074D9;
+
 }
 
 html {
@@ -82,7 +88,7 @@ hr {
 
 .knowledge {
   grid-gap: 1em;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 }
 
 .innerKnowledgeWrapper {
@@ -95,7 +101,7 @@ hr {
 
 .outerKnowledgeWrapper {
   width: 100%;
-  height: 170px;
+  height: 180px;
 }
 
 .outerKnowledgeWrapper:hover .innerKnowledgeWrapper {
@@ -104,6 +110,7 @@ hr {
 
 .front {
   gap: 0.5rem;
+  justify-content: space-around;
 }
 
 .front,
@@ -117,9 +124,56 @@ hr {
   align-items: center;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  justify-content: space-around;
+}
+
+.percentFull {
+  width: 70%;
+  height: 1.2rem;
+  background-color: #EDEDED;
+  border: 1px solid #CCCCCC; 
+  border-radius: 0.25rem;
+}
+
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.fiftyfivePercent {
+  width: 55%;
+  background-color: var(--yellow);
+}
+
+.sixtyfivePercent {
+  width: 65%;
+  background-color: var(--green);
+}
+
+.eightyPercent {
+  width: 80%;
+  background-color: var(--green);
+}
+
+.eightyfivePercent {
+  width: 85%;
+  background-color: var(--blue);
+}
+
+.ninetyPercent {
+  width: 90%;
+  background-color: var(--blue);
+}
+
+.percentReal {
+  margin-bottom: 1px;
+  border-radius: 0.25rem;
+  height: 100%;
+}
+
+h4 {
+  font-weight: bold;
 }
 
 .back {
