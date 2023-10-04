@@ -104,7 +104,7 @@ hr {
   height: 180px;
 }
 
-.outerKnowledgeWrapper:hover .innerKnowledgeWrapper {
+.outerKnowledgeWrapper:hover .innerKnowledgeWrapper, .outerKnowledgeWrapper:focus .innerKnowledgeWrapper {
   transform: rotateY(180deg);
 }
 
@@ -126,6 +126,10 @@ hr {
   padding-right: 0.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+ul {
+  text-align: left;
 }
 
 .percentFull {
