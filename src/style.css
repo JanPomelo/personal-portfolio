@@ -29,7 +29,7 @@ body {
   overflow-x: hidden;
   background-position: center;
   background-size: cover;
-  background-image: url('../dist/code-bg.jpg')
+  background-image: url('../dist/code-bg.webp')
 }
 .portrait {
   width: 80vw;
