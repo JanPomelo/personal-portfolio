@@ -195,7 +195,7 @@ h4 {
 
 @media screen and (min-width: 600px) {
   .portrait {
-    width: 50vw;
+    max-width: 500px;
   }
   .imageh1Wrapper {
     display: flex;
