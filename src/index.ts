@@ -12,14 +12,14 @@ for (let i = 0; i < knowledgeDivs.length; i++) {
   const rotateBack = () => {
     innerKnowledgeDivs[i].style.transform = "rotateY(0deg)";
     knowledgeDivs[i].removeEventListener("touchstart", rotateBack);
-    knowledgeDivs[i].addEventListener("touchstart", rotateFirst);
+    knowledgeDivs[i].addEventListener("touchstart", rotateFirst, { passive: true });
   };
 
   const rotateFirst = () => {
     innerKnowledgeDivs[i].style.transform = "rotateY(180deg)";
     knowledgeDivs[i].removeEventListener("touchstart", rotateFirst);
-    knowledgeDivs[i].addEventListener("touchstart", rotateBack);
+    knowledgeDivs[i].addEventListener("touchstart", rotateBack, { passive: true });
   };
 
-  knowledgeDivs[i].addEventListener("touchstart", rotateFirst);
+  knowledgeDivs[i].addEventListener("touchstart", rotateFirst, { passive: true });
 }
