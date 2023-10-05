@@ -29,6 +29,7 @@ body {
   overflow-x: hidden;
   background-position: center;
   background-size: cover;
+  background-image: url('../dist/code-bg.jpg')
 }
 .portrait {
   width: 80vw;
@@ -104,9 +105,6 @@ hr {
   height: 180px;
 }
 
-.outerKnowledgeWrapper:hover .innerKnowledgeWrapper, .outerKnowledgeWrapper:focus .innerKnowledgeWrapper {
-  transform: rotateY(180deg);
-}
 
 .front {
   gap: 0.5rem;
@@ -214,7 +212,11 @@ h4 {
     width: 40vw;
   }
 }
-
+@media screen and (max-width: 1920px) {
+  body {
+    background-image: none;
+  }
+}
 @media screen and (min-width: 1024px) {
   .imageh1Wrapper {
     width: max(400px, 40vw);
@@ -237,7 +239,14 @@ h4 {
   .contactIcon:hover {
     transform: scale(1.3);
   }
+  .outerKnowledgeWrapper:hover .innerKnowledgeWrapper {
+    transform: rotateY(180deg);
+  }
+  .outerKnowledgeWrapper:focus .innerKnowledgeWrapper {
+  transform: rotateY(180deg);
 }
+}
+
 
 .smallIcon {
   width: 20px;
