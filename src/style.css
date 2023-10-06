@@ -143,6 +143,11 @@ ul {
   background-color: var(--yellow);
 }
 
+.fiftyPercent {
+  width: 50%;
+  background-color: var(--yellow);
+}
+
 .fiftyfivePercent {
   width: 55%;
   background-color: var(--yellow);
@@ -233,18 +238,26 @@ h4 {
   }
 }
 
+
 @media (hover: hover) {
   .projectLink:hover,
   .icon:hover,
   .contactIcon:hover {
     transform: scale(1.3);
   }
-  .outerKnowledgeWrapper:hover .innerKnowledgeWrapper {
-    transform: rotateY(180deg);
-  }
   .outerKnowledgeWrapper:focus .innerKnowledgeWrapper {
   transform: rotateY(180deg);
 }
+}
+
+ .outerKnowledgeWrapper:hover .innerKnowledgeWrapper {
+    transform: rotateY(180deg);
+  }
+
+@media (hover: none) {
+  .outerKnowledgeWrapper:active {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 
