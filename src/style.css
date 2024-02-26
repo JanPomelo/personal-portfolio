@@ -153,6 +153,11 @@ ul {
   background-color: var(--green);
 }
 
+.seventyfivePercent {
+  width: 75%;
+  background-color: var(--green);
+}
+
 .eightyPercent {
   width: 80%;
   background-color: var(--green);
